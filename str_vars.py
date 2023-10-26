@@ -41,8 +41,11 @@ print('count ab: %s' % s8.count('ab'))
 # Throws ValueError if not found
 print('first occurrence of ab: %s ' % s8.index('ab'))
 # Return -1 if not found
-print('find ab: %s' % s8.find('abc'))
+print('find ab: %s' % s8.find('abct'))
 print('last occurrence of ab: %s ' % s8.rindex('ab'))
+rab = s8.rindex('ab')
+print(f'last occurrence of ab: {rab} ')
+print('last occurrence of ab:' + str(rab))
 
 s9 = '     abcaff agvłąśćóóżżźag     '
 print(s9)
