@@ -3,8 +3,9 @@ email2 = '@sgh.waw.pl'
 email3 = 'pawe@sgh.waw.'
 email4 = 'pawesgh.waw.'
 email5 = 'pawesgh.waw.@'
+email6 = 'pawesgh.waw.@sgh'
 
-email_list = [email1, email2, email3, email4, email5]
+email_list = [email1, email2, email3, email4, email5, email6]
 
 def validate_email(email):
     #TODO - verify email....
