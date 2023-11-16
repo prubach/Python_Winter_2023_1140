@@ -23,3 +23,6 @@ def validate_email(email):
 
 for em in email_list:
     print('{}: {}'.format(em, validate_email(em)))
+
+
+
