@@ -32,5 +32,10 @@ for row in list_2D:
 
 #TODO:
 # 1. Sum each row of the matrix - create a list of those sums
+row_sum = []
+for row in list_2D:
+    row_sum.append(sum(row))
+print(row_sum)
 # 2. Sum all elements
+print(sum(row_sum))
 # 3. Sum each column of the matrix - create a list of those sums
