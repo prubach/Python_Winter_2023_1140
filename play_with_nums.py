@@ -27,3 +27,4 @@ print('----------------------')
 num_list_pow = [ x**2 for x in num_list]
 print(num_list_pow)
 print(sum(num_list_pow))
+
