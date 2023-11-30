@@ -10,12 +10,27 @@ plt.ylabel('y')
 #plt.show()
 plt.savefig('points2D.png')
 
-
-
-
-
-
-
-
-
+############################ 3D #######################
 points_3D = [[1, 2, 4], [2, 4, 3], [0, 0, 1], [5, 4, 0]]
+xs = [i[0] for i in points_3D]
+ys = [i[1] for i in points_3D]
+zs = [i[2] for i in points_3D]
+
+
+fig = plt.figure()
+ax = fig.add_subplot(projection='3d')
+ax.scatter(xs, ys, zs, marker='o')
+ax.set_xlabel('X axis')
+ax.set_ylabel('Y axis')
+ax.set_zlabel('Z axis')
+plt.savefig('points3D.png')
+
+plt.show()
+
+
+
+
+
+
+
+
