@@ -55,3 +55,8 @@ print(column_sums)
 
 print('--------------')
 
+lang_name = ['Python', 'Java', 'C++']
+lang_vers = ['3.12', '17', '14']
+
+lang_names_vers = list(zip(lang_name, lang_vers))
+print(lang_names_vers)
