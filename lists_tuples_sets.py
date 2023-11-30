@@ -29,7 +29,7 @@ list_2D = [[1, 2, 4], [2, 4, 3], [0, 0, 1], [5, 4, 0]]
 
 for row in list_2D:
     print(row)
-
+print()
 #TODO:
 # 1. Sum each row of the matrix - create a list of those sums
 row_sum = []
@@ -39,3 +39,19 @@ print(row_sum)
 # 2. Sum all elements
 print(sum(row_sum))
 # 3. Sum each column of the matrix - create a list of those sums
+col_sum = [0, 0, 0]
+for row in list_2D:
+    for i in range(len(row)):
+        col_sum[i] += row[i]
+print(col_sum)
+
+
+# Summe der Zeile
+transposed_matrix = list(zip(*list_2D))
+column_sums = [sum(column) for column in transposed_matrix]
+
+print(transposed_matrix)
+print(column_sums)
+
+print('--------------')
+
