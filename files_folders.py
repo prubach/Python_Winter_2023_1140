@@ -1,4 +1,5 @@
 import os.path
+import shutil
 
 temp_dir = os.getenv('TEMP')
 print(f'Temp dir is {temp_dir}')
@@ -34,3 +35,6 @@ print()
 # . - same folder
 # .. - parent folder
 print(os.listdir('.'))
+
+
+
