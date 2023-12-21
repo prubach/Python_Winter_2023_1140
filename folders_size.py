@@ -10,3 +10,5 @@ a = sum(os.path.getsize(os.path.join(my_folder, f))
         for f in os.listdir(my_folder) if os.path.isfile(os.path.join(my_folder, f)))
 #print(os.listdir('.'))
 print(f'total size: {a}')
+
+#TODO sum all sizes of files in a given folder including the subfolders and their subfolders etc.

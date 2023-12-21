@@ -12,7 +12,8 @@ def time_func(func, n):
     print(f'It took: {elapsed} sec')
 
 
-n = 100000
+n = 100000000
 time_func(sum_of_bowls_loop, n)
-time_func(sum_of_bowls_recursive, n)
-#time_func(sum_of_bowls_sequence, n)
+# Max recursion depth = 998
+#time_func(sum_of_bowls_recursive, n)
+time_func(sum_of_bowls_sequence, n)
