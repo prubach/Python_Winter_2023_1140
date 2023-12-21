@@ -24,7 +24,7 @@ def sum_of_bowls_recursive(n):
         return res
 
 
-
-print('Sum using sequences: {}'.format(sum_of_bowls_sequence(n)))
-print('Sum using loop: {}'.format(sum_of_bowls_loop(n)))
-print('Sum using recursion: {}'.format(sum_of_bowls_recursive(n)))
+if __name__ == '__main__':
+    print('Sum using sequences: {}'.format(sum_of_bowls_sequence(n)))
+    print('Sum using loop: {}'.format(sum_of_bowls_loop(n)))
+    print('Sum using recursion: {}'.format(sum_of_bowls_recursive(n)))
