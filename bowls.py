@@ -16,5 +16,15 @@ def sum_of_bowls_loop(n):
     return sum([x for x in range(1, n+1)])
 
 
+def sum_of_bowls_recursive(n):
+    if n == 1:
+        return 1
+    else:
+        res = sum_of_bowls_recursive(n - 1) + n
+        return res
+
+
+
 print('Sum using sequences: {}'.format(sum_of_bowls_sequence(n)))
 print('Sum using loop: {}'.format(sum_of_bowls_loop(n)))
+print('Sum using recursion: {}'.format(sum_of_bowls_recursive(n)))
