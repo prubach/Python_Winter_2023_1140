@@ -30,8 +30,7 @@ class Account:
         #TODO implement
         if type(amount) != int or amount < 0:
             raise InvalidAmountException(f'Amount is invalid {amount}')
-
-        pass
+        self._balance -= amount
 
     def __repr__(self):
         return f'Account[{self.id}, {self.customer.lastname}, {self._balance}]'
@@ -87,12 +86,14 @@ c2 = bank.create_customer('Anne', 'Smith')
 a3 = bank.create_account(c2)
 print(bank)
 print('--------')
+#a3.deposit(-100)
+
 try:
-    #a = None
+    a = None
     #raise ValueError('aafafa')
-    #a.deposit(330)
-    a3.deposit(100)
-    #a3.deposit(-50)
+    a.deposit(330)
+    a3.deposit(-100)
+    a2.deposit(-50)
 except BankException as ie:
     print(f'Something went wrong {ie}')
 #except (InvalidAmountException, InsufficientFundsException) as ie:
